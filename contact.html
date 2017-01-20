@@ -1,0 +1,191 @@
+<html>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aclonica|Oleo+Script|Volkhov" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	
+	<style>
+		body{
+			background-color:black;
+		}
+		.navbar{
+			background-color:#b8b894;
+			border:0;
+			font-weight:bold;
+			font-size:120%;
+			font-family:Pacifico;
+		}
+		
+		.navbar-inverse .navbar-header>a{
+			color:black;
+			display:inline-block;
+			width:200%;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav > .active > a:visited{
+			background:black;	
+		}
+		#titles{
+			font-family:Aclonica;
+			margin-left:2%;
+		}
+		.over{
+			position:absolute;
+			margin-left:10%;
+			width:90%;
+			align:center;
+			z-index:-1;
+		}
+		
+		.wrapper {
+			position: relative;
+			
+			overflow: hidden;
+			width: 110%;
+			height:55%;
+		}
+		#slide {
+			position: absolute;
+			left: -500px;
+			width: 100%;
+			height: 65%;
+			background: blue;
+			-webkit-animation: slide 0.5s forwards;
+			-webkit-animation-delay: 1s;
+			animation: slide 0.5s forwards;
+			animation-delay: 1s;
+		}
+		@-webkit-keyframes slide {
+			100% { left: 0; }
+		}
+
+		@keyframes slide {
+			100% { left: 0; }
+		}
+		#content{
+			color:white;
+			font-family:Rancho;
+			font-size:150%;
+		}
+		#body{
+			margin-top:5%;margin-left:2%;
+		}	
+		#body1{
+			margin-left:10%;
+		}
+		
+		#map {
+			height: 400px;
+			width: 60%;
+			margin-left:5%;
+			margin-top:10%;
+        }
+    
+	</style>
+	
+	
+	<head>
+		<title>Armadillo Plates</title>
+	</head>
+	
+	
+	<body>
+		<div class="row" >
+			<div class="col-xs-12 col-sm-12">
+				<nav class="navbar navbar-inverse navbar-static-top" id="content_over_video" style="padding:0px;margin:0px">
+					<div class="container-fluid" >
+						<div class="navbar-header" >
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a id="nav1" class="navbar-brand" href="new_main.html" style="font-family:Lobster; font-size:150%;font-weight:bold">Armadillo Plates</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav" id="titles">
+								<li class="active"><a href="new_main.html" id="navi"><em>Home</em></a></li>
+								<li class="class2"><a href="about.html"><em>About</em></a></li>
+								<li class="class2"><a href="new_menu.html"><em>Menu</em></a></li>
+								<li class="class2"><a href="#portfolio1" ><em>Gallery</em></a></li>
+								<li class="class2"><a href="contact.html" ><em>Contact</em></a></li>
+							</ul>      
+						</div>
+					</div>
+				</nav>
+			</div>	
+		</div>
+		
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<p style="font-family:Oswald;font-weight:bold;font-size:200%;text-align:center;color:white;margin:2% 0% 2% 0%">JOIN our mailing list and we'll keep you posted.</p>
+				
+			</div>
+		</div>
+		<div class="row">		
+			<div class="col-xs-12 col-sm-10">
+				<div class="form-group">
+				  <input type="text" class="form-control" id="usr" placeholder="Your E-mail Address" style="width:75%;height:5%;margin-left:20%;border-width:5px">
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-2">
+				<button class="btn btn-primary btn-md" style="border-width:5px;font-weight:bold">Subscribe!</button>
+			</div>
+			
+		</div>
+		
+		<div class="row" style="margin-bottom:30%">
+			<div id="map" class="col-xs-12 col-sm-8">
+			
+			</div>
+			
+			<div class="col-xs-12 col-sm-4" >
+				<div class="row">
+					<p style="margin-top:30%;font-size:200%;color:white;margin-left:28%;font-weight:bold">Location & Hours</p>
+				</div>
+				
+				<div class="row">
+					<p style="font-size:150%;color:white;margin-left:18%;margin-top:10%">3800 SW nth Street,<br> ABC Road,<br> City,<br> State,<br> USA.<br></p>
+				</div>
+			</div>
+		</div>
+		
+		<script>
+		  function initMap() {
+			var uluru = {lat: -25.363, lng: 131.044};
+			var map = new google.maps.Map(document.getElementById('map'), {
+			  zoom: 4,
+			  center: uluru
+			});
+			var marker = new google.maps.Marker({
+			  position: uluru,
+			  map: map
+			});
+		  }
+		</script>
+		<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBSWdoisq2G-M8zMkQEZgA9EqJM1ZgSaCQ&callback=initMap">
+		</script>
+
+	</body>
+	
+	
+</html>
+
+
+

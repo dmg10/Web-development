@@ -1,0 +1,185 @@
+<html>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aclonica|Oleo+Script|Volkhov" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	
+	<style>
+		
+		body{
+			background-color:black;
+		}
+		.navbar{
+			background-color:#b8b894;
+			border:0;
+			font-weight:bold;
+			font-size:120%;
+			font-family:Pacifico;
+		}
+		
+		.navbar-inverse .navbar-header>a{
+			color:black;
+			display:inline-block;
+			width:200%;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav > .active > a:visited{
+			background:black;	
+		}
+		#titles{
+			font-family:Aclonica;
+			margin-left:2%;
+		}
+		.over{
+			position:absolute;
+			margin-left:10%;
+			width:90%;
+			align:center;
+			z-index:-1;
+		}
+		
+		.wrapper {
+			position: relative;
+			
+			overflow: hidden;
+			width: 110%;
+			height:55%;
+		}
+		#slide {
+			position: absolute;
+			left: -500px;
+			width: 100%;
+			height: 65%;
+			background: blue;
+			-webkit-animation: slide 0.5s forwards;
+			-webkit-animation-delay: 1s;
+			animation: slide 0.5s forwards;
+			animation-delay: 1s;
+		}
+		@-webkit-keyframes slide {
+			100% { left: 0; }
+		}
+
+		@keyframes slide {
+			100% { left: 0; }
+		}
+		#content{
+			color:white;
+			font-family:Rancho;
+			font-size:150%;
+		}
+		#body{
+			margin-top:5%;margin-left:2%;
+		}	
+		#body1{
+			margin-left:10%;
+		}
+	</style>
+	
+	
+	<head>
+		<title>Armadillo Plates</title>
+	</head>
+	
+	
+	<body>
+		<div class="row" >
+			<div class="col-xs-12 col-sm-12">
+				<nav class="navbar navbar-inverse navbar-static-top" id="content_over_video" style="padding:0px;margin:0px">
+					<div class="container-fluid" >
+						<div class="navbar-header" >
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a id="nav1" class="navbar-brand" href="new_main.html" style="font-family:Lobster; font-size:150%;font-weight:bold">Armadillo Plates</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav" id="titles">
+								<li class="active"><a href="new_main.html" id="navi"><em>Home</em></a></li>
+								<li class="class2"><a href="about.html"><em>About</em></a></li>
+								<li class="class2"><a href="new_menu.html"><em>Menu</em></a></li>
+								<li class="class2"><a href="#portfolio1" ><em>Gallery</em></a></li>
+								<li class="class2"><a href="contact.html" ><em>Contact</em></a></li>
+							</ul>      
+						</div>
+					</div>
+				</nav>
+			</div>	
+		</div>
+		
+		<div class="col-xs-12 col-sm-9" id="body">
+			<div class="row">
+				<div class="col-xs-12 col-sm-3">
+					<div class="wrapper">
+						<p id="content" style="font-size:200%">Menu</p>
+						<img id="slide" style="border:2px outset;border-radius:25px" src="about1.jpg"/>
+					</div>
+				</div>
+			
+				<div class="col-xs-12 col-sm-6" id="content" style="margin-top:4%;margin-left:5%">
+					<p >We work with our local farmers, growers and purveyors to source products with integrity, flavor and soul, and incorporate these seasonal offerings into our menus nightly. The result is food that is honest, straightforward and pays homage to the bounty of the Lowcountry region we are so privileged to call home. Using ingredients at their peak and preparing them minimally and with respect allows us to capture the essence of the season and bring it straight to your table.</p>
+				</div>
+			</div>	
+			<div class="row" style="margin-left:20%">
+				<div class="col-xs-12 col-sm-4">
+					<div class="wrapper">
+						<p id="content" style="font-size:200%">Setting</p>
+						<img id="slide" style="border:2px outset;border-radius:25px" src="setting.jpg"/>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-5" id="content" style="margin-top:6%;margin-left:2%">
+					<p >Laid-back, eclectic and unpretentious, AP is one part retro diner, one part neighborhood café, and one part elegant bistro. Warm hues, soft lighting and an unexpected quirkiness encourage guests to settle in, get comfortable, and have a great time.</p>
+				</div>
+			</div>
+			<div class="row" style="margin-left:40%">
+				<div class="col-xs-12 col-sm-5">
+					<div class="wrapper">
+						<p id="content" style="font-size:200%">Service</p>
+						<img id="slide" style="border:2px outset;border-radius:25px" src="service.jpg"/>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-5" id="content" style="margin-top:6%;margin-left:2%">
+					<p >The AP experience is about more than just food. A sincere effort to educate our staff on all aspects of food and wine culture is the basis for our service philosophy.  The welcoming staff at AP goes to great lengths to make diners feel at ease, comfortable and well taken care of.</p>
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="col-xs-12 col-sm-2">
+			<div class="row">
+				<p id="content" style="font-size:200%">Who we Are</p>
+				<p><img style="border:2px outset;border-radius:25px;width:90%;height:35%" src="chef.jpg"/></p>
+				<p id="content">Chef XYZ</p>
+			</div>
+			<div class="row">
+				<p><img style="border:2px outset;border-radius:25px;width:90%;height:35%" src="cook.jpg"/></p>
+				<p id="content">Chef PQR</p>
+			</div>
+			<div class="row">
+				<p><img style="border:2px outset;border-radius:25px;width:90%;height:35%" src="chef1.png"/></p>
+				<p id="content">Chef ABC</p>
+			</div>
+		</div>
+		
+	</body>
+	
+	
+	
+</html>

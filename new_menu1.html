@@ -1,0 +1,319 @@
+<html>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aclonica|Oleo+Script|Volkhov" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	
+	<style>
+		@media screen and (min-width : 1500px) {
+			h1{
+				font-family:Cookie;
+				text-align:center;
+				color:black;
+				font-size:600%;
+			}
+			h3{
+				font-family:Rancho;font-size:300%;color:black;
+			}
+			p{
+				font-family:Rancho;font-size:200%;color:black;
+			}
+			#titles{
+			font-family:Aclonica;
+			margin-left:2%;
+		}
+		.over{
+			position:absolute;
+			margin-left:10%;
+			width:90%;
+			align:center;
+			z-index:-1;
+		}
+		.under{
+			position:absolute;
+			margin:10% 0% 0% 50%;
+			z-index:-1;
+		}
+		.under1{
+			position:absolute;
+			margin:25% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under2{
+			position:absolute;
+			margin:30% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under3{
+			position:absolute;
+			margin:50% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under4{
+			position:absolute;
+			margin:55% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under5{
+			position:absolute;
+			margin:75% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under6{
+			position:absolute;
+			margin:80% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under7{
+			position:absolute;
+			margin:125% 0% 0% 50%;
+			z-index:-1;
+		}
+		}
+
+		@media screen and (max-width : 1500px) {
+			h1{
+				font-family:Cookie;
+				text-align:center;
+				color:black;
+				font-size:200%;
+			}
+			h3{
+				font-family:Rancho;font-size:140%;color:black;font-weight:bold;
+			}
+			p{
+				font-family:Rancho;font-size:120%;color:black;
+				
+			}
+			#titles{
+			font-family:Aclonica;
+			margin-left:2%;
+		}
+		
+		.over{
+			position:absolute;
+			margin-left:0%;
+			width:120%;
+			
+			align:center;
+			z-index:-1;
+		}
+		.under{
+			position:absolute;
+			margin:13% 0% 0% 50%;
+			z-index:-1;
+		}
+		.under1{
+			position:absolute;
+			margin:20% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under2{
+			position:absolute;
+			margin:25% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under3{
+			position:absolute;
+			margin:67% 0% 0% 25%;
+			
+			z-index:-1;
+		}
+		.under4{
+			position:absolute;
+			margin:72% 0% 0% 25%;
+			line-height:0%;
+			z-index:-1;
+		}
+		.under5{
+			position:absolute;
+			margin:85% 0% 0% 25%;
+			line-height:0%;
+			z-index:-1;
+		}
+		.under6{
+			position:absolute;
+			margin:90% 0% 0% 25%;
+			z-index:-1;
+		}
+		.under7{
+			position:absolute;
+			margin:150% 0% 0% 50%;
+			z-index:-1;
+		}
+		}
+		
+		.navbar{
+			background-color:#b8b894;
+			border:0;
+			font-weight:bold;
+			font-size:120%;
+			font-family:Pacifico;
+		}
+		
+		.navbar-inverse .navbar-header>a{
+			color:black;
+			display:inline-block;
+			width:200%;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav > .active > a:visited{
+			background:black;	
+		}
+	</style>
+	
+	
+	<head>
+		<title>Armadillo Plates</title>
+	</head>
+	
+	<body>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<nav class="navbar navbar-inverse navbar-static-top" id="content_over_video" style="padding:0px;margin:0px">
+					<div class="container-fluid" >
+						<div class="navbar-header" >
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a id="nav1" class="navbar-brand" href="new_main.html" style="font-family:Lobster; font-size:150%;font-weight:bold">Armadillo Plates</a>
+						</div>
+						<div class="collapse navbar-collapse" id="myNavbar">
+							<ul class="nav navbar-nav" id="titles">
+								<li class="active"><a href="new_main.html" id="navi"><em>Home</em></a></li>
+								<li class="class2"><a href="about.html"><em>About</em></a></li>
+								<li class="class2"><a href="new_menu.html"><em>Menu</em></a></li>
+								<li class="class2"><a href="#portfolio1" ><em>Gallery</em></a></li>
+								<li class="class2"><a href="contact.html" ><em>Contact</em></a></li>
+							</ul>      
+						</div>
+					</div>
+				</nav>
+			</div>	
+		</div>
+	
+		<div class="row">
+			<div class="col-xs-4 col-sm-2">
+				
+			</div>
+			
+			<div class="col-xs-10 col-sm-8">
+				<img src="menu.png" class="over"/>
+				<h1 class="under">Menu</h1>
+				<h3 class="under1">Lunch</h3>
+				<p class="under2" id="paras">Cup of Soup + House or Caesar Salad 
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Cup of Soup or House or Caesar Salad + Two BFG Soft Tacos
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1.5x" style="color:black"></i></a><br>
+				
+				BFG Fish Sandwich
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				
+				Alaskan Cod Fish & Chips<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1.5x" style="color:black"></i></a><br>
+				
+				Maryland-Style Jumbo Lump Crab Cakes <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1.5x" style="color:black"></i></a>
+				</p>
+				
+				<h3 class="under3">Dinner</h3>
+				<p class="under4" id="paras">Fresh Catch of the Day  
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Chilean Sea Bass<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				
+				Atlantic Salmon<a class="btn btn-social-icon btn-linkedin" href="salmon.jpg" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Sea Scallops + Shrimp<a class="btn btn-social-icon btn-linkedin" href="scallops.jpg" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Ahi Tuna Steak<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Rainbow Trout
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Tilapia
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Signature Sauces
+				<a class="btn btn-social-icon btn-linkedin" href="sauces.jpg" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Filet Mignon
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Bone-In Ribeye Steak
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Sirloin + Crab Cake Dinner
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				The Angler’s Sirloin Steak
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Fontina Pork Chop
+				<a class="btn btn-social-icon btn-linkedin" href="fontina.jpg" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Lily’s Chicken
+				<a class="btn btn-social-icon btn-linkedin" href="chicken.jpg" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Pecan Parmesan Crusted Rainbow Trout
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				</p>
+				
+				<!--<h3 style="font-family:Rancho;font-size:300%;color:black" class="under5">Starters</h3>
+				
+				<p style="font-family:Rancho;font-size:200%;color:black" class="under6">
+				Bang Bang Shrimp 
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Ahi Tuna Sashimi<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1.5x" style="color:black"></i></a><br>
+				
+				
+				Edameme<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1.5x" style="color:black"></i></a><br>
+				
+				Calamari
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Thai Coconut Shrimp 
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Maryland Crab Cakes 
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br>
+				
+				Ceviche 
+				<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-camera fa-1x" style="color:black"></i></a><br></p>-->
+				
+				<p class="under7"><a href="new_menu.html" style="font-color:black">1</a>&emsp;<a href="new_menu1.html">2</a>&emsp; <a href="new_menu2.html">3</a></p>
+			</div>	
+		</div>
+		
+		<!--<div class="row" style="background-color:red">
+			<div class="col-xs-12 col-sm-12">
+				<footer>
+					<p>1</p>
+				</footer>
+			</div>
+		</div>-->
+	</body>
+	
+	
+	
+</html>

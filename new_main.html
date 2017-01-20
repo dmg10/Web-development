@@ -1,0 +1,406 @@
+<html>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Rancho" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Aclonica|Oleo+Script|Volkhov" rel="stylesheet">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+	
+	<head>
+		<title>Armadillo Plates</title>
+	</head>
+	
+	<style>
+	@media screen and (min-width : 1500px){
+		body{
+				background-color:#ffe6ff;
+				
+		}
+		.navbar{
+			background-color:#b8b894;
+			border:0;
+			font-weight:bold;
+			font-size:120%;
+			font-family:Pacifico;
+		}
+		
+		.navbar-inverse .navbar-header>a{
+			color:black;
+			display:inline-block;
+			width:200%;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav > .active > a:visited{
+			background:black;	
+		}
+		#titles{
+			font-family:Aclonica;
+			margin-left:2%;
+		}
+		#content_over_video{
+			position:relative;
+			color:#FFF;
+			font-family:Pacifico;
+			width:100%;
+		}
+		#under{
+			position:absolute;
+			margin:5% 0% 0% 2%;width:48%;height:80%;left:10%;
+			
+			z-index:-1;
+		}
+		#over{
+			position:absolute;
+			top:350px;
+			z-index:-1;
+			height:70%;width:65%;margin:5% 0% 0% 2%;
+		}
+		.paras{
+			color:#000066;
+		}
+		.other_color{
+			background-color:white;
+			padding: 5% 2% 10% 0%;
+			text-align:center justify;
+			color:black;
+		}
+		#foot{
+			background-color:black;
+			color:white;
+		}
+		.carousel-indicators .active{
+			border-color:#000066;
+			background-color: #000066;
+		}
+		#content_over_video1{
+			position:absolute;
+			margin:30% 0% 0% 20%;
+			text-align: justify;
+			color:#FFF;
+			font-family:Oswald;
+			width:100%;
+			
+		}
+		#r{
+			padding-bottom:4%;
+		}
+		#photos{
+			height:10px;top:80%;left:5%;margin:5% 0% 0% 2%;border-color:black;
+		}
+		#smaller{
+			height:70%;width:43%;top:9.7%;left:13.7%;margin:11.5% 0% 0% 0%;
+		}
+		#images{
+			height:74%;
+		}
+		#left_control{
+			height:74%;width:5%;top:0%;left:13.8%;
+		}
+		#right_control{
+			height:74%;width:5%;position:absolute;top:0%;left:52%;
+		}
+		
+	}
+	@media screen and (max-width : 1500px){
+		body{
+				background-color:#ffe6ff;
+				
+		}
+		.navbar{
+			background-color:#b8b894;
+			border:0;
+			font-weight:bold;
+			font-size:120%;
+			font-family:Pacifico;
+		}
+		
+		.navbar-inverse .navbar-header>a{
+			color:black;
+			display:inline-block;
+			width:200%;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav>.class2>a{
+			color:black;
+		}
+		.navbar-inverse .navbar-nav > .active > a:visited{
+			background:black;	
+		}
+		#titles{
+			font-family:Aclonica;
+			margin-left:2%;
+		}
+		#content_over_video{
+			position:relative;
+			color:#FFF;
+			font-family:Pacifico;
+			width:100%;
+		}
+		#under{
+			position:absolute;
+			margin:5% 0% 0% 2.5%;width:48%;height:80%;left:10%;
+			
+			z-index:-1;
+		}
+		#over{
+			position:absolute;
+			top:350px;
+			z-index:-1;
+			height:70%;width:65%;margin:5% 0% 0% 2%;
+		}
+		.paras{
+			color:#000066;
+		}
+		.other_color{
+			background-color:white;
+			padding: 5% 2% 10% 0%;
+			text-align:center justify;
+			color:black;
+		}
+		#foot{
+			background-color:black;
+			color:white;
+		}
+		.carousel-indicators .active{
+			border-color:#000066;
+			background-color: #000066;
+		}
+		#content_over_video1{
+			position:absolute;
+			margin:70% 0% 0% 20%;
+			text-align: justify;
+			color:#FFF;
+			font-size:100%;
+			font-family:Oswald;
+			width:100%;
+			
+		}
+		#r{
+			padding-bottom:4%;
+		}
+		#photos{
+			height:10px;top:80%;left:5%;margin:5% 0% 0% 2%;border-color:black;
+		}
+		#smaller{
+			height:70%;width:44%;top:9.7%;left:13.7%;margin:13.5% 10% 0% 0%;
+		}
+		#images{
+			height:73%;
+		}
+		#left_control{
+			height:74%;width:5%;top:0%;left:13.5%;
+		}
+		#right_control{
+			height:74%;width:5%;position:absolute;top:0%;left:52.6%;
+		}
+		
+	}
+	</style>
+	<body>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12">
+		<div class="col-xs-8 col-sm-12">
+			<h2 id="content_over_video1">At Armadillo  we  make  food  with  more  love  and  care  than  Yo  MOMMA</h2>
+		</div>
+			<nav class="navbar navbar-inverse navbar-static-top" id="content_over_video" style="padding:0px;margin:0px">
+				<div class="container-fluid" >
+					<div class="navbar-header" >
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a id="nav1" class="navbar-brand" href="new_main.html" style="font-family:Lobster; font-size:150%;font-weight:bold">Armadillo Plates</a>
+					</div>
+					<div class="collapse navbar-collapse" id="myNavbar">
+						<ul class="nav navbar-nav" id="titles">
+							<li class="active"><a href="#above" id="navi"><em>Home</em></a></li>
+							<li class="class2"><a href="about.html"><em>About</em></a></li>
+							<li class="class2"><a href="new_menu.html"><em>Menu</em></a></li>
+							<li class="class2"><a href="#portfolio1" ><em>Gallery</em></a></li>
+							<li class="class2"><a href="contact.html" ><em>Contact</em></a></li>
+						</ul>      
+					</div>
+				</div>
+			</nav>
+			
+			<video id="bg" src="clip.mp4" autoplay="true" loop="true" muted="true" width="102%"></video>
+		</div>	
+	</div>
+	
+	<div class="row" id="r" >
+			<div class="col-xs-12 col-sm-6">
+				<img id="under" src="ipad.png"/>
+					<div id="myCarousel over" class="carousel slide" data-ride="carousel" >
+							<!-- Indicators -->
+							<ol class="carousel-indicators" id="photos" >
+								<li data-target="#myCarousel" data-slide-to="0" class="active" style="border-color:#000066"></li>
+								<li data-target="#myCarousel" data-slide-to="1" style="border-color:#000066"></li>
+								<li data-target="#myCarousel" data-slide-to="2" style="border-color:#000066"></li>
+								<li data-target="#myCarousel" data-slide-to="3" style="border-color:#000066"></li>
+							</ol>
+
+							<!-- Wrapper for slides -->
+							<div class="carousel-inner" role="listbox" id="smaller">
+								<div class="item active">
+								  <img src="pizza1.jpg" alt="Thai" id="images">
+								</div>
+
+								<div class="item">
+								  <img src="pizza2.jpg" alt="Sea-food" id="images">
+								</div>
+
+								<div class="item">
+								  <img src="pizza3.jpg" alt="Food" id="images">
+								</div>
+
+								<div class="item">
+								  <img src="pizza1.jpg" alt="Pic" id="images">
+								</div>
+							</div>
+
+							  <!-- Left and right controls -->
+							<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev" id="left_control">
+								<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+								<span class="sr-only">Previous</span>
+							</a>
+							  
+							<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" id="right_control">
+								<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+								<span class="sr-only">Next</span>
+							</a>
+					</div>
+			</div>
+			<div class="col-xs-12 col-sm-5 paras">
+				<h1 style="padding:30% 0% 0% 0%;font-family:Pacifico;text-align:center">Food for everyone.</h1>
+				<h3 style="text-align: justify;padding:0% 2% 0% 2%">We are pleased to bring you the finest quality meals made from locally sourced ,grass-fed meats and organic produce. We take great pride in our recipes and we like to think we offer best food in Bay Area. We would love to show why.</h3>
+				<a href="new_menu.html"><button type="button" class="btn btn-info btn-lg" style="margin:2% 0% 2% 3%">See Menu</button></a>
+			</div>		
+		</div>	
+		
+		<div class="row other_color">
+			<div class="col-xs-12 col-sm-6">
+				<div class="row">
+					<h1 style="font-family:Cookie;font-size:500%;text-align:center">Table Reservations</h1>
+					<img src="border.png" style="text-align:center;height:12%;margin-left:26%"/>
+				</div>
+				<div class="row">
+					<h1 style="margin:0% 10% 0% 10%;text-align:justify;font-family:Rancho;font-size:200%">Have a big meeting or a date !! Reserve your table in advance to avoid waiting in long queues and create a good impression on client or your girl !</h1>
+				</div>
+				<div class="row">
+					<form style="margin:5% 5% 0% 10%">
+					  <div class="form-group" >
+						<label for="name" style="font-family:Rancho;font-size:150%">Reservation Name</label>
+						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="Your name please!">
+					  </div>
+					  
+					  <div class="form-group" style="margin-top:2%">
+						<label for="name1" style="font-family:Rancho;font-size:150%">Number of People</label>
+						<input type="text" class="form-control" id="exampleInputEmail1" placeholder="It's fun to eat with group">
+					  </div>
+					  
+					  <div class="container">
+					  
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group">
+							<label style="font-family:Rancho;font-size:150%">Arrival Date</label>
+							<div class='input-group date' id='datetimepicker2'>
+								
+								<input type='text' class="form-control" />
+								<span class="input-group-addon">
+									<span class="glyphicon glyphicon-calendar"></span>
+								</span>
+							</div>
+						</div>
+					</div>
+					<script type="text/javascript">
+						$(function () {
+							$('#datetimepicker2').datetimepicker({
+								locale: 'ru'
+							});
+						});
+					</script>
+				</div>
+			</div>
+			  <div class="form-group" style="margin-top:2%">
+						<label for="time" style="font-family:Rancho;font-size:150%">Expected Arrival Time</label>
+						<input type="text" class="form-control" id="time" aria-describedby="time" placeholder="Example:7 pm or 10 am">
+					  </div>
+					  
+					  <div class="form-group" style="margin-top:2%">
+						<label for="exampleSelect1" style="font-family:Rancho;font-size:150%">Table Type</label>
+						<select class="form-control" id="exampleSelect1">
+						  <option>Standard</option>
+						  <option>Candle Lit</option>
+						  <option>By the pool</option>
+						</select>
+					  </div>
+					  
+					  <div class="form-group" style="margin-top:2%">
+						<label for="exampleTextarea" style="font-family:Rancho;font-size:150%">Any Special Requests for Us ?</label>
+						<textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+					  </div>
+					  
+					  <button type="submit" class="btn btn-primary" style="font-family:Rancho;font-size:180%">Reserve !!</button>
+					</form>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<img src="glasses.jpg" style="height:90%;width:92%;border:2px outset;border-radius:25px;margin:20% 0% 0% 6%"/>
+			</div>
+		</div>	
+		
+		<div class="row" style="background-color:#d699ff;color:black;padding-bottom:2%">
+			<div class="col-xs-12 col-sm-6">
+				<div class="row">
+					<img src="plate1.jpeg" style="height:30%; width:30%;margin:7% 0% 0% 5%;border:2px outset;border-radius:25px"/>
+				</div>
+				<div class="row">
+					<img src="plate2.jpeg" style="height:30%; width:30%;margin:7% 0% 0% 30%;border:2px outset;border-radius:25px"/>
+				</div>
+				<div class="row">
+					<img src="plate3.jpg" style="height:30%;width:30%;margin:7% 0% 0% 55%;border:2px outset;border-radius:25px"/>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6">
+				<h1 style="font-family:Cookie;font-size:400%;text-align:center;margin-left:0%">Online Ordering</h1>
+				<img src="border.png" style="text-align:center;height:12%;margin-left:27%"/>
+				<p style="font-family:Rancho;font-size:200%;color:black;text-align:justify;margin:0% 5% 0% 2%">Pick up your favorite individual entrées, appetizers, desserts and beverages and enjoy them wherever you want. Whatever your occasion, make planning easy with our delicious catering combinations, available for pickup. To provide the best level of service this holiday season, please place your online order 24 hours in advance. For orders needed sooner, call your local Olive Garden. Deliver greatness to your gathering. Get your favorite combinations delivered right to your door. We provide ToGo Pickup, Catering PickUp or Catering Delivery.</p>
+				<button class="btn btn-primary btn-lg" style="font-family:Rancho;font-size:150%;margin-left:2%">Order Now!</button>
+			</div>	
+		</div>
+		
+			
+		<div class="row" id="foot">
+			<footer>
+				<div class="col-xs-12 col-sm-3 text-center">
+					<p><strong><h3>ABOUT THIS PAGE</h3></strong></p>
+					<p style="font-size:150%">Made with <span class="glyphicon glyphicon-music"></span> and <span class="glyphicon glyphicon-apple"></span> by Devanshi.</p>
+				</div>
+				<div class="col-xs-12 col-sm-offset-6 col-sm-2 text-center">
+					<p><strong><h3>AROUND THE WEB</h3></strong></p>
+					<a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/" target="_blank"><i class="fa fa-linkedin fa-2x" style="color:white"></i></a>
+					<a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/in/" target="_blank"><i class="fa fa-facebook fa-2x" style="color:white"></i></a>
+					<a class="btn btn-social-icon btn-twitter" href="http://www.twitter.com/in/" target="_blank"><i class="fa fa-twitter fa-2x" style="color:white"></i></a>
+				</div>
+			</footer>
+		</div>
+		
+	</body>
+</html>
